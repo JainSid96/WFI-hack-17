@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingBottom="40dp"
+        android:text="Your Location"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:gravity="center"
+        android:paddingBottom="50dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:text="Select Your Daily Route"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingBottom="50dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:text="Select Your Grocery Store"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="50dp" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="fill_parent"
+        android:layout_height="34dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/grey_hard"
+
+        android:onClick="addClick"
+        android:text="ADD" />
+
+</LinearLayout>

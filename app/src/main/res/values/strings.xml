@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FOODO</string>
+
+    <string name="volunteer">I wolud like to volunteer for delivering food and receive notifications about food donation</string>
+
+    <string name="location">Take current location as Address</string>
+
+    <string name="location2">Take current location as Food Pickup Address</string>
+    <string name="title_activity_nearby_ngo">Map</string>
+    <string name="title_activity_nearby_ngo_">Map</string>
+    <string name="title_activity_animal_shelter_">Map</string>
+    <string name="title_activity_community_fridge_">Map</string>
+</resources>

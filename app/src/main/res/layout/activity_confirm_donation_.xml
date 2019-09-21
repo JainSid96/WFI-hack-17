@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dcube.foodo.ConfirmDonation_Activity">
+
+    <RelativeLayout
+        android:id="@+id/Heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/logo"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageView3"
+            android:fontFamily="sans-serif-condensed"
+            android:text="FOODO"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/background_dark"
+            android:textSize="40sp"
+            android:textStyle="italic"
+            tools:layout_editor_absoluteX="165dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:gravity="start" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="360dp"
+        android:layout_height="426dp"
+        android:layout_below="@+id/Heading"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/texew4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Confirm Timing for Donation"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/timeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Enter convenient time"
+            android:inputType="time"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Choose Pickup Location"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+
+        <EditText
+            android:id="@+id/adressText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Enter Pickup Address"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Take Current Location as Pickup Location"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="482dp" />
+
+        <Button
+            android:id="@+id/confirmBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="confirm"
+            android:text="CONFIRM DONATE"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

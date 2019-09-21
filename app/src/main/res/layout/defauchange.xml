@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add__item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="136dp"
+            android:layout_height="96dp"
+            app:srcCompat="@drawable/qwe"
+
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:id="@+id/imageView2" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Name:"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"
+            />
+        <!-- Text Label -->
+        <TextView
+            android:text="TextView"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/t3" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Days:"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"
+            />
+
+        <!-- Spinner Element -->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text=""
+            android:ems="10"
+            android:id="@+id/et" />
+
+
+
+        <Button android:id="@+id/button16"
+            android:layout_width="fill_parent"
+            android:layout_height="34dp"
+            android:text="ADD"
+            android:background="#7FFF00"
+
+            android:layout_marginTop="15dp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dcube.foodo.AddItem_Activity">
+
+    <LinearLayout
+        android:layout_width="338dp"
+        android:layout_height="537dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp">
+        <ImageView
+            android:layout_width="136dp"
+            android:layout_height="96dp"
+            app:srcCompat="@drawable/qwe"
+
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:id="@+id/imageView2" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Name:"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"
+            />
+        <EditText
+            android:id="@+id/ed1"
+            android:background="@drawable/edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+        <!-- Text Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Days:"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"
+            />
+
+        <!-- Spinner Element -->
+        <Spinner
+            android:id="@+id/spinner"
+            android:background="@drawable/edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/pickit"
+            android:layout_gravity="center"
+            android:id="@+id/imageButton"
+            android:background="@null"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+
+            android:textSize="16sp"
+            android:background="@drawable/bu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Button"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:id="@+id/button1" />
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

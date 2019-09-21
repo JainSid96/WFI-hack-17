@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:paddingTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="NAME"/>
+    <EditText
+        android:id="@+id/upname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        >
+    </EditText>
+    <TextView
+        android:layout_width="fill_parent"
+        android:paddingTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="DAYS"/>
+    <EditText
+        android:id="@+id/updays"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        >
+    </EditText>
+
+    <Button android:id="@+id/upbu"
+        android:layout_width="fill_parent"
+        android:layout_height="34dp"
+        android:text="SAVE"
+        android:background="#7FFF00"
+
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="136dp"
+        android:layout_height="96dp"
+        app:srcCompat="@drawable/qwe"
+
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/imgbutton"
+        android:layout_width="200dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="100dp"
+        android:background="@color/cardview_shadow_start_color"
+        android:fontFamily="sans-serif-condensed"
+        android:text="CLICK PICTURE"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingTop="20dp"
+        android:text="NAME"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        >
+    </EditText>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="DAYS"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <!-- Spinner Element -->
+    <Spinner
+        android:id="@+id/spinner"
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.44"
+        android:paddingBottom="20dp"/>
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="200dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="15dp"
+
+        android:background="@color/cardview_shadow_start_color"
+        android:fontFamily="sans-serif-condensed"
+        android:text="ADD"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+</LinearLayout>

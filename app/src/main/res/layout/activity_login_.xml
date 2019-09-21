@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dcube.foodo.Login_Activity">
+
+    <RelativeLayout
+        android:id="@+id/Heading"
+        android:layout_width="240dp"
+        android:layout_height="83dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            app:srcCompat="@drawable/logo"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/imageView3"
+            android:fontFamily="sans-serif-condensed"
+            android:text="FOODO"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/background_dark"
+            android:textSize="40sp"
+            android:textStyle="italic"
+            tools:layout_editor_absoluteX="165dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView3"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Donate to those in need"
+            android:textAlignment="center"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="309dp"
+        android:layout_height="409dp"
+        android:layout_below="@+id/Heading"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Heading"
+        app:layout_constraintVertical_bias="0.409">
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Enter your name"
+            android:textStyle="italic"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/edt_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Enter mobile number"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:textStyle="italic"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Enter your email"
+            android:inputType="textEmailAddress"
+            android:textStyle="italic"
+            android:typeface="serif" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/checkLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/location"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:typeface="serif" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/checkVolunteer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/volunteer"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/btn_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="register"
+            android:text="REGISTER"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
